@@ -1,5 +1,13 @@
-function Input ({className, type, placeholder, onCharge}) {
-    return <input className={className} type={type} placeholder={placeholder} onCharge={onCharge} />
+function Input({ className, type, placeholder, value, onChange }) {
+  return (
+    <input
+      className={className}
+      type={type}
+      placeholder={placeholder}
+      value={value}
+      onChange={onChange}
+    />
+  );
 }
 
 export default Input;
