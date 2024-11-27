@@ -11,24 +11,27 @@ body {
 .container {
   background-color: #1f1f1f1f;
   width: 550px;
+  height: 600px;
   margin: auto;
+  margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  border-radius: 10px;
 }
 
 .c-container {
   border-bottom: 1px solid #2f2f2f;
   width: 100%;
-  height: 80px;
+  height: 10%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .c-container input {
-  margin-left: 10px;
+  margin-left: 20px;
   background-color: transparent;
   border: none;
   height: 80%;
@@ -38,28 +41,90 @@ body {
 }
 
 .c-container:hover {
-    background-color: #1f1f1f4f;
-    .create {
-        background-color: #11de59;
-    }
-    transition: 0.2s;
+  background-color: #1f1f1f4f;
+  .create {
+    background-color: #11de59;
+  }
+  transition: 0.2s;
 }
 
 .c-container:not(:hover) {
-    transition: 0.2s;
+  transition: 0.2s;
 }
 
 .c-container button {
-  margin-right: 10px;
+  margin-right: 20px;
   border: none;
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #1DB954;
+  background-color: #1db954;
   font-size: 20pt;
   font-weight: bolder;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #1f1f1f;
+}
+
+.t-container {
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  width: 100%;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.task {
+  width: 100%;
+  margin-top: 5px;
+  color: #7d7d7d;
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  height: 50px;
+  align-items: center;
+}
+
+.task:hover {
+  background-color: #1a1a1a1b;
+  transition: 1s;
+  .delete {
+    display: flex;
+    background-color: rgb(255, 34, 34);
+  }
+}
+
+.task > span {
+  margin-left: 15px;
+  font-size: 13pt
+}
+
+.task button {
+  background-color: red;
+  width: 100px;
+  height: 35px;
+  border: none;
+  border-radius: 10px;
+  color: #f5f5f5;
+  font-weight: bold;
+  font-size: 13pt;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+
+.trash {
+  color: white; 
+  height: 50%;
+  padding: 0;
+  margin: 0;
+  margin-right: 0;
+}
+
+.task button > span {
+  margin-left: 3px;
 }
